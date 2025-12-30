@@ -1,0 +1,105 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form select,
+form input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.spinner {
+  margin: 15px auto;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+
+/* Background gradient with soft glow effect */
+.academic-bg {
+  background: linear-gradient(135deg, #101622 0%, #1c1f27 50%, #101622 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card shadow and glow */
+.card-glow {
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+  background: #1c1f27;
+}
+
+/* Shimmer button effect */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: #8b5cf6;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-25deg);
+}
+
+.btn-shimmer:hover::after {
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 125%;
+  }
+}
