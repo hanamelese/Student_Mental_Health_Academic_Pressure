@@ -11,3 +11,4 @@ class StressInput(BaseModel):
 
 class StressOutput(BaseModel):
     predicted_stress_frequency: str
+    confidence: float
